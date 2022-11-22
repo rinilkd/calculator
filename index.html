@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="border border-secondary container bg-light p-3 mt-5 " style="width:27%; border-radius: 20px;">
+        <h1 class="text-center text-dark">Calculator</h1>
+            <div>
+            <input id="result" type="text" class="form-control">
+        </div>
+        <div class="row mt-2 me-1 ms-2">
+            <div class="col-3"><button onclick="display(1)" class="btn btn-outline-secondary">1</button></div>
+            <div class="col-3"><button onclick="display(2)" class="btn btn-outline-secondary">2</button></div>
+            <div class="col-3"><button onclick="display(3)" class="btn btn-outline-secondary">3</button></div>
+            <div class="col-3"><button onclick="display('/')" class="btn btn-outline-secondary">/</button></div>
+        </div>
+        <div class="row mt-2 me-1  ms-2">
+            <div class="col-3"><button onclick="display(4)" class="btn btn-outline-secondary">4</button></div>
+            <div class="col-3"><button onclick="display(5)" class="btn btn-outline-secondary">5</button></div>
+            <div class="col-3"><button onclick="display(6)" class="btn btn-outline-secondary">6</button></div>
+            <div class="col-3"><button onclick="display('*')" class="btn btn-outline-secondary">*</button></div>
+        </div>
+        <div class="row mt-2 me-1  ms-2">
+            <div class="col-3"><button onclick="display(7)" class="btn btn-outline-secondary">7</button></div>
+            <div class="col-3"><button onclick="display(8)" class="btn btn-outline-secondary">8</button></div>
+            <div class="col-3"><button onclick="display(9)" class="btn btn-outline-secondary">9</button></div>
+            <div class="col-3"><button onclick="display('-')" class="btn btn-outline-secondary">-</button></div>
+        </div>
+        <div class="row mt-2 me-1  ms-2">
+            <div class="col-3"><button onclick="display(0)" class="btn btn-outline-secondary">0</button></div>
+            <div class="col-3"><button onclick="allclear()" class="btn btn-outline-secondary">AC</button></div>
+            <div class="col-3"><button onclick="display('+')" class="btn btn-outline-secondary">+</button></div>
+            <div class="col-3"><button onclick="evaluateexp()" class="btn btn-outline-secondary">=</button></div>
+
+        </div>
+        <div class="container mt-2   ms-2">
+            <div><button onclick="backspace()" class="container btn btn-outline-secondary w-50 ms-4">&#9003;</button></div>
+        </div>
+    </div>
+</body>
+<script src="./calcu.js"></script>
+</html>
